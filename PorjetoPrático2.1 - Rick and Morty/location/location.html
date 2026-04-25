@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations</title>
+    <link rel="stylesheet" href="./location.css">
+    <link rel="shortcut icon" href="../assets/Logo-rickandmorty.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+     <nav>
+        <ul>
+            <div class="logo">
+                <a href="../characters/Characters.html">
+                <img src="../assets/logo-RaM.png" alt="logo" class="logo-img">
+                </a> 
+            </div>
+           <div id="main-nav"> 
+            <a href="../characters/Characters.html">
+                <li class="text-char">Characters</li>    
+            </a>
+            <a href="../EpisodiesPast/Ep.html">
+                <li class="text-ep">Episodies</li>
+            </a>
+            <a href="../location/location.html">
+                <li class="text-loc">Location</li>
+            </a>
+            </div>
+        </ul>
+    </nav>
+    <div class="social-media">
+        <a href="https://www.instagram.com/silvinx_tv/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/SilvinxOF" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://github.com/Silva3027" target="_blank">
+                <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/wesley-silva-1b4354267/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+    </div>
+    </header>
+
+    <section class="main-container">
+        <h2>Rick and Morty Multiversal Guide</h2>
+        
+        <div id="controls">
+
+            <input type="text" id="location-search" placeholder="Search by name or dimension...">
+            <button id="search-button">Search</button>
+        </div>
+
+        <div id="location-list" class="grid-container"></div>
+
+        <div class="buttons">
+            <button id="back-button" disabled>Previous</button>
+            <span id="page-info"></span>
+            <button id="next-button" disabled>Next</button>
+        </div>
+        
+        <footer>
+            <p class="footer-logo">Rick and Morty Locations</p>
+            <p class="copyright">developed by &copy; Wesley Silva</p>
+        </footer>
+        
+    </section>
+    
+    
+
+    <script src="./location.js"></script>
+    <script src= "https://kit.fontawesome.com/fac2355e21.js" crossorigin="anonymous"></script>
+</body>
+</html>
