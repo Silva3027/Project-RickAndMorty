@@ -172,8 +172,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 10px;
-    margin: 40px 0 20px 0; 
+    background: #00000081;
 }
 
 .footer-logo{
@@ -225,3 +224,119 @@ footer{
     font-weight: lighter;
     color:  #00ffcc;
 }
+
+@media screen and (max-width: 1000px){
+
+body{
+    background-image: linear-gradient(to top,#66ffcc, #0d0d0d);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+}
+
+header nav ul div{
+    visibility: hidden;
+}
+
+header nav ul a div{
+    visibility: visible;
+}
+
+.logo-img{
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.social-media{
+    visibility: hidden;
+}
+
+li{color:white}
+li:hover{color: #00ffcc}
+
+i{font-size: 1.2rem;}
+i:hover{color:#00ffcc;}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 0;
+}
+
+h2{
+   text-align: center;
+   flex-wrap: wrap;
+}
+
+.cards{
+    width: 115px;
+    height: 235px;
+}
+
+.cards:hover{
+    transform: scale(1.02);
+}
+
+.character-name-bg{
+    height: auto;
+    text-align: center;
+}
+
+.character-name{
+    font-size: 0.8rem;
+    padding: 3px;
+}
+
+footer{
+    
+}
+
+.modal  {
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+}
+
+
+.modal-content{
+    width: 25vw;
+    height: 70vh;
+    background-color: #0d0d0d;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 10px 2px ;
+    align-items: center;
+}
+
+.character-image {
+     width: 200px;
+     height: 250px;
+     border-radius: 25%;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+.character-details {
+    font-family: 'Playpen Sans',sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+    color:  #00ffcc;
+}
+
+}
+    
