@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rick and Morty</title>
-    <link rel="stylesheet" href="./Characters.css">
+    <title>Episodies</title>
+    <link rel="stylesheet" href="./Ep.css">
     <link rel="shortcut icon" href="../assets/Logo-rickandmorty.png" type="image/x-icon">
 </head>
 <body>
-    <header>
+   <header>
         <div class="logo">
             <a href="../characters/Characters.html">
             <img src="../assets/logo-RaM.png" alt="logo" class="logo-img">
@@ -17,10 +17,10 @@
         <div id="main-nav">
             <nav>
                 <ul class="text">
-                    <a href="./Characters.html">
+                    <a href="../characters/Characters.html">
                         <li>Characters</li>
                     </a>
-                    <a href="../Episodies/Ep.html">
+                    <a href="./Ep.html">
                         <li>Episodies</li>
                     </a>
                     <a href="../location/location.html">
@@ -43,28 +43,19 @@
                 <i class="fa-brands fa-linkedin-in"></i>
             </a>
             </div>
-    </header>
-
+    </header> 
+    
     <div class="main-container">
-        <h2>Conheça todos os personagens de Rick and Morty em um só lugar</h2>
-
-        <div class="main-content" id="main-content" ></div>
-
-        <div class="modal" id="modal" onclick="hideModal()">
-            <div class="modal-content" id="modal-content" ></div>
-        </div>
-
-         <div class="buttons">
-          <button id="back-button" disabled >Anterior</button>
-          <span id="page-info"></span>
-          <button id="next-button" disabled >Próxima</button>
-         </div>
-
-        </div>
+        <h2>todos os episódios de Rick and Morty</h2>
+        
+        <div id="episodes-by-season" ></div>
+    </div>
+        
+    
     <footer>
         <nav class="footer-navegation">
             <ul class="footer-list">
-                <a href="./Characters.html">
+                <a href="../characters/Characters.html">
                     <li>Characters</li>
                 </a>
                 <a href="../Episodies/Ep.html">
@@ -89,13 +80,14 @@
                 <i class="fa-brands fa-linkedin-in"></i>
             </a>
         </nav>
-
-            <p class="footer-logo">Rick and Morty Characters</p>
-            <p class="copyrigth">Desenvolvido por &copy; Wesley Silva</p>
+        
+        <p class="footer-logo">Rick and Morty Episodies</p>
+        <p class="copyrigth">Desenvolvido por &copy; Wesley Silva</p>
     </footer>
 
-
+    
+    <script src="./Ep.js"></script>
     <script src="https://kit.fontawesome.com/fac2355e21.js" crossorigin="anonymous"></script>
-    <script src="./Characters.js"></script>
+    
 </body>
 </html>

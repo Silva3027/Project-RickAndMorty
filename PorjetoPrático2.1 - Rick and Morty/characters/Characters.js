@@ -1,4 +1,5 @@
 let currentPageUrl = 'https://rickandmortyapi.com/api/character'
+let currentPage = 1;
 
 window.onload = async () => {
     try {
@@ -91,6 +92,9 @@ async function loadCharacters(url) {
 
         backButton.style.visibility = responseJson.info.prev? "visible":"hidden"
 
+        const pageInfo = document.getElementById('page-info');
+        pageInfo.innerText = `Page ${currentPage}`;
+
         currentPageUrl = url
 
     } catch (error){
@@ -106,6 +110,7 @@ async function loadNextPage() {
         const response = await fetch(currentPageUrl)
         const responseJson = await response.json()
 
+        currentPage++;
         await loadCharacters(responseJson.info.next)
 
     } catch (error) {
@@ -121,6 +126,7 @@ async function loadPreviousPage() {
         const response = await fetch(currentPageUrl)
         const responseJson = await response.json()
 
+        currentPage--;
         await loadCharacters(responseJson.info.prev)
 
     } catch (error) {

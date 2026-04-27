@@ -9,9 +9,7 @@
 }
 
 body{
-    background-image: url('../assets/wallpaperbetter.com_2560x1440.jpg');
-    background-size: cover;
-    background-attachment: fixed;
+    background: linear-gradient(to top left, #66ffcc, #0d0d0dcd, #0d0d0d);
 }
 
 a{
@@ -23,17 +21,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
-nav{
-    width: 80%;
-}
-
-ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    padding: 10px 20px;
 }
 
 .logo{
@@ -43,21 +31,18 @@ ul{
     justify-content: center;
     align-items: center;
 }
-
 .logo-img{
     width: 100%;
     height: auto;
 }
 
-#main-nav{
-    width: 70%;
+#main-nav ul{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    gap: 20px;
 }
 
-.text-char, .text-ep, .text-loc{
-    font-size: 1.5rem;
+.text{
+    font-size: 1.2rem;
     font-family: 'Playpen Sans', sans-serif;
 }
 
@@ -95,7 +80,7 @@ h2{
     padding: 20px;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 255, 204, 0.2);
+    box-shadow: 2px 4px 8px rgba(0, 255, 204, 0.2);
 }
 
 .season-section{
@@ -142,41 +127,11 @@ h2{
     text-decoration: underline;
 }
 
-.buttons{
-    width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-button{
-    width: 70px;
-    height: 25px;
-    background-color:  #00ffcc;
-    color: #000;
-    font-weight: 700;
-    border-radius: 3px;
-    cursor: pointer;
-    border: 1px solid #000;
-    outline: none;
-    transition: 0.3s;
-}
-button:hover{
-    background-color: #000;
-    color:  #00ffcc;
-}
-#back-button, #next-button{
-    visibility: hidden;
-}
-
 footer{
-    height: 100px;
+    width: 100%;
     display: flex;
-    Flex-direction: column;
-    align-self: center;
-    row-gap: 10px;
-    margin: 40px 0 20px 0;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-logo{
@@ -185,6 +140,107 @@ footer{
     font-weight: 500;
 }
 
+.footer-navegation{
+    visibility: hidden;
+    position: absolute;
+}
+
+.footer-social{
+    visibility: hidden;
+    position: absolute;
+}
+
 .copyright{
     font-weight: 500;
+}
+
+@media screen and (max-width: 1000px){
+
+    body {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #0d0d0d;
+        background-image: none;
+        margin: 0;
+        padding: 5px 10px;
+    }
+
+        header {
+        width: 100vw;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    .logo {
+        margin-top: 10px;
+    }
+
+    .logo-img {
+        width: 100%;
+        height: auto;
+    }
+
+    #main-nav {
+        visibility: hidden;
+    }
+
+    header nav ul a div {
+        visibility: visible;
+    }
+
+    .social-media {
+        visibility: hidden;
+    }
+
+    h2 {
+        text-align: center;
+        margin: 15px 0;
+        font-size: 1.2rem;
+    }
+
+    .season-section h3 {
+    font-size: 1.5rem;
+    }
+
+    .season-section li{
+    font-size: 0.8rem;
+    }
+
+
+    footer {
+        width: 100%;
+        height: auto;
+        padding: 15px 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-navegation {
+        visibility: visible;
+        position: static;
+    }
+
+    .footer-navegation ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-social{
+        visibility: visible;
+        position: static;
+        display: flex;
+        gap: 10px;
+    }
+
+    .footer-logo {
+        font-size: 1rem;
+    }
+
+    .copyrigth {
+        font-size: 0.75rem;
+    }
 }

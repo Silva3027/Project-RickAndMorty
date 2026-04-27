@@ -9,13 +9,11 @@
 }
 
 body{
-    background-image: url('../assets/wallpaperbetter.com_2560x1440.jpg');
-    background-size: cover;
-    background-attachment: fixed;
+    background: linear-gradient(to top left, #66ffcc, #0d0d0d, #0d0d0d);
 }
 
 a{
-    text-decoration: none;
+    text-decoration:none
 }
 
 header{
@@ -23,19 +21,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 10px 20px;
 }
 
-nav {
-    width: 80%;
-}
-
-ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    
-}
 .logo{
     width: 250px;
     height: 100%;
@@ -47,16 +35,15 @@ ul{
     width: 100%;
     height: auto;
 }
-#main-nav{
-    width: 70%;
+
+#main-nav ul{
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    gap: 20px;
 }
 
-.text-char, .text-ep, .text-loc{
-    font-size: 1.5rem;
-    font-family: 'Playpen Sans',sans-serif;
+.text{
+    font-size: 1.2rem;
+    font-family: 'Playpen Sans', sans-serif;
 }
 
 .social-media{
@@ -65,8 +52,8 @@ ul{
     justify-content: space-between;
 }
 
-li{color: white;}
-li:hover{color: #00ffcc;}
+li{color:white}
+li:hover{color:#00ffcc;}
 
 i{font-size: 1.2rem;}
 i:hover{color:#00ffcc;}
@@ -85,8 +72,8 @@ i:hover{color:#00ffcc;}
     gap: 10px;
     justify-content: center;
     align-items: center;
-    background: #383838c7;
-    box-shadow: 0px 1px 15px #00ffcc;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 5px #00ffcc;
     border-radius: 10px;
     position: relative;
     padding: 20px 0px
@@ -102,7 +89,7 @@ h2{
 
 #location-search{
     width: 300px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgb(31, 31, 31);
     color:white;
     border: 1px solid dimgray;
     border-radius: 5px;
@@ -134,8 +121,8 @@ h2{
     gap: 10px;
     margin-top:20px;
     padding: 20px;
-    background: #383838c7;
-    box-shadow: 0px 1px 10px #00ffcc;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 5px #00ffcc;
     border-radius: 10px;
 }
 
@@ -145,8 +132,8 @@ h2{
     display: flex;
     flex-direction: column;
     border-radius: 8px;
-    background: #383838;
-    box-shadow: 0px 3px 10px black;
+    background: rgb(31, 31, 31);
+    box-shadow: 0px 1px 10px rgb(31, 31, 31);
     cursor: pointer;
     transition: 0.5s;
     padding: 10px;
@@ -160,8 +147,7 @@ h2{
 .location-name-bg{
     width: 100%;
     height: 50px;
-    background-color: dimgray;
-    box-shadow: 0px 1px 10px dimgray;
+    background-color: rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -205,7 +191,7 @@ h2{
     font-size: 1.2rem;
     color: #00ffcc;
     font-weight: 600;
-    text-shadow: 0px 0px 10px rgba(0, 255, 204, 0.5);
+    text-shadow: 0px 2px 10px rgb(0, 15, 12);
 }
 
 button{
@@ -233,8 +219,6 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 10px;
-    margin: 40px 0 20px 0; 
 }
 
 .footer-logo{
@@ -243,6 +227,75 @@ footer{
     font-weight: 500;
 }
 
-.copyrigth{
+.footer-navegation{
+    visibility: hidden;
+    position: absolute;
+}
+
+.footer-social{
+    visibility: hidden;
+    position: absolute;
+}
+
+.copyright{
     font-weight: 500;
+}
+
+@media screen and (max-width: 1000px){
+    body {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #0d0d0d;
+        background-image: none;
+        margin: 0;
+        padding: 5px 10px;
+    }
+
+    header {
+        width: 100vw;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    .logo {
+        margin-top: 10px;
+    }
+
+    .logo-img {
+        width: 100%;
+        height: auto;
+    }
+
+    #main-nav {
+        visibility: hidden;
+    }
+
+    header nav ul a div {
+        visibility: visible;
+    }
+    .social-media {
+        visibility: hidden;
+    }
+    h2 {
+        text-align: center;
+        margin: 15px 0;
+        font-size: 1.2rem;
+    }
+
+    #controls{
+        width: 80%;
+    }
+
+    #location-search{
+        width: 100%;
+    }
+
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    
+    
 }
