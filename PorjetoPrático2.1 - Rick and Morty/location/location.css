@@ -218,6 +218,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 25px;
 }
 
 .footer-logo{
@@ -311,12 +312,12 @@ footer{
     padding: 1px;
 }
     
-.dimension{
+    .dimension{
     font-size: 0.8rem;
     padding-left: 2px;
 }
 
-footer {
+    footer {
         width: 100%;
         height: auto;
         padding: 15px 10px;
@@ -324,18 +325,18 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 20px;
-    }
+}
 
     .footer-navegation {
         visibility: visible;
         position: static;
-    }
+}
 
     .footer-navegation ul{
         display: flex;
         flex-direction: column;
         gap: 10px;
-    }
+}
 
     .footer-social{
         visibility: visible;
@@ -354,6 +355,16 @@ footer {
 
     #page-info{
         font-size: 0.8rem;
+    }
+
+}
+
+
+@media screen and (min-width: 1001px){
+
+    .grid-container{
+        display: flex;
+        flex-wrap: wrap;
     }
 
 }
