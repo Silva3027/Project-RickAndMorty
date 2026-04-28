@@ -44,8 +44,7 @@ async function loadLocation(url) {
 
             const dimension = document.createElement("span")
             dimension.className = 'dimension';
-            dimension.innerText = `Dimension:
-            ${location.dimension}`;
+            dimension.innerText = `Dimension: ${location.dimension}`;
 
             
             locationNameBG.appendChild(name)

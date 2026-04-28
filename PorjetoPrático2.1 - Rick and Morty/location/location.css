@@ -170,7 +170,6 @@ h2{
     width: 100%;
     height: auto;
     padding-left: 5px;
-
 }
 
 .dimension{
@@ -285,6 +284,7 @@ footer{
 
     #controls{
         width: 80%;
+        padding: 15px;
     }
 
     #location-search{
@@ -293,9 +293,67 @@ footer{
 
     .grid-container{
         display: flex;
-        flex-direction: column;
         width: 80%;
+        flex-wrap: wrap;
+    }
+
+    .location-name-bg{
+        height: auto;
     }
     
+    .location-name{
+    font-size: 0.8rem;
+    padding: 1px;
+}
+
+    .location-type{
+    font-size: 0.6rem;
+    padding: 1px;
+}
     
+.dimension{
+    font-size: 0.8rem;
+    padding-left: 2px;
+}
+
+footer {
+        width: 100%;
+        height: auto;
+        padding: 15px 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-navegation {
+        visibility: visible;
+        position: static;
+    }
+
+    .footer-navegation ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-social{
+        visibility: visible;
+        position: static;
+        display: flex;
+        gap: 10px;
+    }
+
+    .footer-logo {
+        font-size: 1rem;
+    }
+
+    .copyrigth {
+        font-size: 0.75rem;
+    }
+
+    #page-info{
+        font-size: 0.8rem;
+    }
+
 }
